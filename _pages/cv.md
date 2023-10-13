@@ -13,4 +13,4 @@ redirect_from:
 
 图像预览版如下：
 
-![](E:\个人主页\Sheehan-Fang.github.io\files\cv.png)
+![](../files/cv.png)
