@@ -7,7 +7,7 @@
 
 <body>
     <div class="bar">个人简历</div>
-    <div class="middle">
+    <div class="middle" id="mainInfo">
         <div class="personal">
             <img src="./picture/photo.png" width="150px" height="150px" id="photo">
             <div class="name">
@@ -56,7 +56,7 @@
         </div>
         <div class="time">
             <div class="time_word" style="text-align: left;">2022.11-2023.06</div>
-            <div class="time_word" style="text-align: center;">计算机设计大赛国赛二等奖</div>
+            <div class="time_word2" style="text-align: center;">计算机设计大赛国赛二等奖</div>
             <div class="time_word" style="text-align: end; padding-right: 40px;">第一作者</div>
         </div>
         <ul class="dital_list">
@@ -66,7 +66,7 @@
         <hr>
         <div class="time">
             <div class="time_word" style="text-align: left;">2022.07-2022.08</div>
-            <div class="time_word" style="text-align: center;">可解释性知识图谱推理软件</div>
+            <div class="time_word2" style="text-align: center;">可解释性知识图谱推理软件</div>
             <div class="time_word" style="text-align: end; padding-right: 40px;">算法开发</div>
         </div>
         <ul class="dital_list">
@@ -76,7 +76,7 @@
         <hr>
         <div class="time">
             <div class="time_word" style="text-align: left;">2022.05-2022.07</div>
-            <div class="time_word" style="text-align: center;">时空动向事态可视化分析软件</div>
+            <div class="time_word2" style="text-align: center;">时空动向事态可视化分析软件</div>
             <div class="time_word" style="text-align: end; padding-right: 40px;">后端开发</div>
         </div>
         <ul class="dital_list">
@@ -86,7 +86,7 @@
         <hr>
         <div class="time">
             <div class="time_word" style="text-align: left;">2022.08-2022.11</div>
-            <div class="time_word" style="text-align: center;">基于词素词向量模型的恶意程序行为表征方法</div>
+            <div class="time_word2" style="text-align: center;">基于词素词向量模型的恶意程序行为表征方法</div>
             <div class="time_word" style="text-align: end; padding-right: 40px;">数据清洗</div>
         </div>
         <ul class="dital_list">
@@ -96,7 +96,7 @@
         <hr>
         <div class="time">
             <div class="time_word" style="text-align: left;">2022.03-2023.03</div>
-            <div class="time_word" style="text-align: center;">基于STM32和小程序控制的智能灯控系统</div>
+            <div class="time_word2" style="text-align: center;">基于STM32和小程序控制的智能灯控系统</div>
             <div class="time_word" style="text-align: end; padding-right: 40px;">省级大创负责人</div>
         </div>
         <ul class="dital_list">
@@ -108,7 +108,7 @@
         </div>
         <div class="time">
             <div class="time_word" style="text-align: left;">2020.09-2021.9</div>
-            <div class="time_word" style="text-align: center;">中南大学计算机学院团委学生会</div>
+            <div class="time_word2" style="text-align: center;">中南大学计算机学院团委学生会</div>
             <div class="time_word" style="text-align: end; padding-right: 40px;"> 办公室副主任</div>
         </div>
         <ul class="dital_list">
@@ -134,6 +134,60 @@
         </p>
     </div>
     <div class="bottom_bar"></div>
+    <button onclick="topFunction()" class="btn" id="toTop" title="Go to top" style="display: none; bottom: 190px; right: 20px;">  
+        <div id="top">
+            <img src="./picture/backTop.png" alt="icon" width="40px" height="40px"> 
+            返回顶部
+        </div>
+    </button>
+    <button onclick="backFunction()" class="btn" id="back" title="Go to top" style="bottom: 120px; right: 20px;">  
+        <a id="top">
+            <img src="./picture/back.png" alt="icon" width="40px" height="40px"> 
+            返回主页
+        </div>
+    </button>
+    <button onclick="printdiv()" class="btn" id="printPage" title="Go to top" style="bottom: 50px; right: 20px;">  
+        <div id="top">
+            <img src="./picture/print.png" alt="icon" width="40px" height="40px"> 
+            打印页面
+        </div>
+    </button>
 </body>
+
+<script>  
+    // 获取按钮  
+    var toTop = document.getElementById("toTop");  
+    var back = document.getElementById("back"); 
+    // 当用户向下滚动20px时，显示按钮  
+    window.onscroll = function() {scrollFunction()};  
+      
+    function scrollFunction() {  
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {  
+        toTop.style.display = "block";  
+      } else {  
+        toTop.style.display = "none";  
+      }  
+    }  
+      
+    // 当用户点击按钮时，回到页面顶部  
+    function topFunction() {  
+      document.body.scrollTop = 0; // For Safari  
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
+    }  
+
+    //返回主页函数
+    function backFunction() {  
+        window.location.href = "http://homepage.sheehan-fang.space";
+    }  
+
+    function printpage() {window.print();}
+    function printdiv() {
+        var printContents = document.getElementById('mainInfo').innerHTML;  
+        var originalContents = document.body.innerHTML;  
+        document.body.innerHTML = printContents;  
+        window.print();  
+        document.body.innerHTML = originalContents;  
+    }
+</script>
 
 </html>
