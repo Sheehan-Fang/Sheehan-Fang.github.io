@@ -1,0 +1,147 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    background-color: wheat;
+}
+
+.bar{
+    height: 30px;
+    border: 0ch;
+    border-left: 30px;
+    border-color: rgb(36,140,117);
+    border-style: solid;
+    padding: auto;
+    padding-left: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+
+.middle{
+    margin: 15px 30px;
+    background-color: white;
+    flex-direction:column;
+    min-width: 800px;
+}
+
+.personal{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+#photo{
+    margin: 30px;
+    border: 0ch;
+    border-bottom: 5px;
+    border-right: 5px;
+    border-color:rgb(36,140,117) ;
+    border-style:solid;
+}
+
+.name{
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.target{
+    color: rgb(36,140,117) ;
+    font-size: 20px;
+}
+
+.blank{
+    flex-grow: 2;
+}
+
+.dital{
+    margin: 10px 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.dital_words{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.second_title{
+    font-size: 20px;
+    max-width:150px ;
+    border: 0px;
+    border-bottom:5px;
+    border-style: solid;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.divide_line{
+    margin: 30px;
+    border:0px;
+    border-bottom:5px;
+    border-style: solid;
+    border-color: gray;
+    padding: 0px;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.time_word{
+    height: 30px;
+    width: 33%;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.info_word{
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.dital_list{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.dital_list2{
+    list-style: none;
+}
+
+.bottom_bar{
+    height: 30px;
+    border: 0ch;
+    border-left: 300px;
+    border-color: rgb(36,140,117);
+    border-style: solid;
+    padding: auto;
+    padding-left: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+}
+
+hr {  
+    border: 1pt dashed #000;  
+    margin: 10px 30px 20px 30px;  
+    opacity: 0.3;
+}
