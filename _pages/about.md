@@ -12,6 +12,7 @@ redirect_from:
 
 
 
+
 **教育经历**
 
 <div style="display:flex; flex-direction:column; flex-wrap:nowrap;border-top: 2px dashed #33ccff;border-bottom: 2px dashed #33ccff;">

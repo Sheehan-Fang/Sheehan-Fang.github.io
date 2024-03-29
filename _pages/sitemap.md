@@ -1,3 +1,4 @@
+<!-- 
 ---
 layout: archive
 title: "Sitemap"
@@ -34,4 +35,5 @@ A list of all the posts and pages found on the site. For you robots out there is
   {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
-{% endfor %}
+{% endfor %} 
+-->
