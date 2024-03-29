@@ -22,7 +22,7 @@ redirect_from:
         <div style="height:30px;width:25%;text-align:center;font-size:18px;font-weight:bold;">计算机科学与技术</div>
         <div style="height:30px;width:25%;text-align:center;font-size:18px;font-weight:bold;">硕士</div>
     </div>
-    <img src="../images/hust.png" style="height:25%;width:25%;margin:auto;margin-bottom:10px;">
+    <img src="../images/hust.jpg" style="height:25%;width:25%;margin:auto;margin-bottom:10px;">
 </div>
 <div style="display:flex; flex-direction:column; flex-wrap:nowrap;border-bottom: 2px dashed #33ccff;">
 	<div style="display:flex; flex-direction:row; flex-wrap:nowrap; align-content:center;margin:5px;">
@@ -31,5 +31,5 @@ redirect_from:
         <div style="height:30px;width:25%;text-align:center;font-size:18px;font-weight:bold;">计算机科学与技术</div>
         <div style="height:30px;width:25%;text-align:center;font-size:18px;font-weight:bold;">本科</div>
     </div>
-    <img src="../images/csu.png" style="height:25%;width:25%;margin:auto;margin-bottom:10px;">
+    <img src="../images/csu.jpg" style="height:25%;width:25%;margin:auto;margin-bottom:10px;">
 </div>
