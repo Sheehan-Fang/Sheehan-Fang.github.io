@@ -19,7 +19,6 @@ redirect_from:
 </head>
 
 <body>
-    <div class="bar">个人简历</div>
     <div class="middle" id="mainInfo">
         <div class="personal">
             <img src="https://sheehan-fang.github.io/files/cv/picture/photo.png" width="150px" height="150px" id="photo">
@@ -59,8 +58,8 @@ redirect_from:
                 <div class="time_word">计算机科学与技术（本科）</div>
             </div>
             <ul class="dital_list">
-                <li style="margin-top: 10px;"><b>年级排名：</b>5/252(前2%)&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp<b>GPA：</b>92.17</li>
-                <li style="margin-top: 10px;"><b>CET-4：</b>569&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp<b>CET-6：</b>518</li>
+                <li style="margin-top: 10px;"><b>年级排名：</b>5/252(前2%) <b>   GPA：</b>92.17</li>
+                <li style="margin-top: 10px;"><b>CET-4：</b>569 <b>   CET-6：</b>518</li>
                 <li style="margin-top: 10px;">国家奖学金、校级奖学金、校级三好学生、院级优秀团员</li>
             </ul>
         </div>
@@ -146,61 +145,5 @@ redirect_from:
             善于沟通，贴近用户。
         </p>
     </div>
-    <div class="bottom_bar"></div>
-    <button onclick="topFunction()" class="btn" id="toTop" title="Go to top" style="display: none; bottom: 190px; right: 20px;">  
-        <div id="top">
-            <img src="https://sheehan-fang.github.io/files/cv/picture/backTop.png" alt="icon" width="40px" height="40px"> 
-            返回顶部
-        </div>
-    </button>
-    <button onclick="backFunction()" class="btn" id="back" title="Go to top" style="bottom: 120px; right: 20px;">  
-        <a id="top">
-            <img src="https://sheehan-fang.github.io/files/cv/picture/back.png" alt="icon" width="40px" height="40px"> 
-            返回主页
-        </div>
-    </button>
-    <button onclick="printdiv()" class="btn" id="printPage" title="Go to top" style="bottom: 50px; right: 20px;">  
-        <div id="top">
-            <img src="https://sheehan-fang.github.io/files/cv/picture/print.png" alt="icon" width="40px" height="40px"> 
-            打印页面
-        </div>
-    </button>
 </body>
-
-<script>  
-    // 获取按钮  
-    var toTop = document.getElementById("toTop");  
-    var back = document.getElementById("back"); 
-    // 当用户向下滚动20px时，显示按钮  
-    window.onscroll = function() {scrollFunction()};  
-      
-    function scrollFunction() {  
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {  
-        toTop.style.display = "block";  
-      } else {  
-        toTop.style.display = "none";  
-      }  
-    }  
-      
-    // 当用户点击按钮时，回到页面顶部  
-    function topFunction() {  
-      document.body.scrollTop = 0; // For Safari  
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
-    }  
-
-    //返回主页函数
-    function backFunction() {  
-        window.location.href = "http://homepage.sheehan-fang.space";
-    }  
-
-    function printpage() {window.print();}
-    function printdiv() {
-        var printContents = document.getElementById('mainInfo').innerHTML;  
-        var originalContents = document.body.innerHTML;  
-        document.body.innerHTML = printContents;  
-        window.print();  
-        document.body.innerHTML = originalContents;  
-    }
-</script>
-
 </html>
