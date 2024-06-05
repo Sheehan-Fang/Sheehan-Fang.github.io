@@ -14,40 +14,11 @@ redirect_from:
 <html>
 
 <head>
-    <title>个人简历</title>
     <link href="https://sheehan-fang.github.io/files/cv/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <div class="middle" id="mainInfo">
-        <div class="personal">
-            <img src="https://sheehan-fang.github.io/files/cv/picture/photo.png" width="150px" height="150px" id="photo">
-            <div class="name">
-                房钰深
-                <div class="target">专业：计算机科学与技术</div>
-            </div>
-            <div class="blank"></div>
-            <ul>
-                <li class="dital">
-                    <img src="https://sheehan-fang.github.io/files/cv/picture/name.png" width="25px" height="25px" class="dital_img">
-                    <div class="dital_words">21岁</div>
-                </li>
-                <li class="dital">
-                    <img src="https://sheehan-fang.github.io/files/cv/picture/github.png" width="25px" height="25px" class="dital_img">
-                    <div class="dital_words">
-                        <a href="https://github.com/Sheehan-Fang" target="_blank">sheehan-fang's github</a>
-                    </div>
-                </li>
-                <li class="dital">
-                    <img src="https://sheehan-fang.github.io/files/cv/picture/email.png" width="25px" height="25px" class="dital_img">
-                    <div class="dital_words">sheehanfang@163.com</div>
-                </li>
-                <li class="dital">
-                    <img src="https://sheehan-fang.github.io/files/cv/picture/local.png" width="25px" height="25px" class="dital_img">
-                    <div class="dital_words">中国·湖南省·长沙市</div>
-                </li>
-            </ul>
-        </div>
         <div class="divide_line">
             <div class="second_title">教育背景</div>
         </div>
@@ -60,7 +31,7 @@ redirect_from:
             <ul class="dital_list">
                 <li style="margin-top: 10px;"><b>年级排名：</b>5/252(前2%) <b>   GPA：</b>92.17</li>
                 <li style="margin-top: 10px;"><b>CET-4：</b>569 <b>   CET-6：</b>518</li>
-                <li style="margin-top: 10px;">国家奖学金、校级奖学金、校级三好学生、院级优秀团员</li>
+                <li style="margin-top: 10px;">优秀毕业生、国家奖学金、校级奖学金、校级三好学生、院级优秀团员</li>
             </ul>
         </div>
         <div class="divide_line">
