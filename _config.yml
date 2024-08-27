@@ -82,9 +82,10 @@ analytics:
 author:
   name             : "房钰深"
   avatar           : "profile.jpg"
-  bio              : "学术型硕士在读（计算机科学与技术）"
-  location         : "中国·湖北·武汉"
-  employer         : "华中科技大学·计算机科学与技术学院"
+  bio              : "学术型硕士在读"
+  major            : "计算机科学与技术(081200)"
+  location         : "中国·湖北·武汉·华中科技大学"
+  employer         : "计算机科学与技术学院"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            : "sheehanfang@163.com"
