@@ -44,7 +44,7 @@ redirect_from:
       </div>
       <ul class="dital_list">
           <li style="margin-top: 10px;"><b>作品名称：</b>《基于图谱融合的高性能精细化全景可视分析预警平台》</li>
-          <li style="margin-top: 10px;"><b>作品内容：</b>以产业链数据为例，基于多图谱协同分析产业链供求关系等方面存在的潜在关系，并对其进行评估与预警。</li>
+          <li style="margin-top: 10px;"><b>作品内容：</b>以产业链数据为例，基于多图谱协同分析产业链供求关系等方面存在的潜在关系，并对其进行评估预警。</li>
       </ul>
       <hr>
       <div class="time">
@@ -112,7 +112,7 @@ redirect_from:
       </div>
       <p class="info_word">
           深度互联网从业人员，对互联网保持高度的敏感性和关注度，熟悉产品开发流程，
-          有很强的产品规划、需求分析、交互设计能力，能独立承担APP和WEB的项目的管理工作，
+          有很强的产品规划、需求分析、交互设计能力。能独立承担APP和WEB的项目的管理工作，
           善于沟通，贴近用户。
       </p>
       <div style="width: 100%; height: 100px;"></div>
