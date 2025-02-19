@@ -70,6 +70,7 @@ redirect_from:
                 实验结果表明，AMDP在BERT,WordCNN和WordLSTM分类模型上的攻击成功率平均提升约10%，同时减少了对原始样本的平均修改率和对目标模型的平均访问次数。
             </li>
         </ul>
+        <hr>
         <div class="time">
             <div class="time_word" style="text-align: left;">2022.11-2023.06</div>
             <div class="time_word2" style="text-align: center;">计算机设计大赛国赛二等奖</div>
