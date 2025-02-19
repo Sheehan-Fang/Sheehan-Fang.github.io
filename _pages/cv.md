@@ -18,35 +18,7 @@ redirect_from:
 </head>
 
 <body>
-  <div class="middle" id="mainInfo">
-        <div class="personal">
-            <img src="./picture/photo.png" width="150px" height="150px" id="photo">
-            <div class="name">
-                房钰深
-                <div class="target">专业：计算机科学与技术</div>
-            </div>
-            <div class="blank"></div>
-            <ul>
-                <li class="dital">
-                    <img src="./picture/name.png" width="25px" height="25px" class="dital_img">
-                    <div class="dital_words">21岁</div>
-                </li>
-                <li class="dital">
-                    <img src="./picture/github.png" width="25px" height="25px" class="dital_img">
-                    <div class="dital_words">
-                        <a href="https://github.com/Sheehan-Fang" target="_blank">sheehan-fang's github</a>
-                    </div>
-                </li>
-                <li class="dital">
-                    <img src="./picture/email.png" width="25px" height="25px" class="dital_img">
-                    <div class="dital_words">sheehanfang@163.com</div>
-                </li>
-                <li class="dital">
-                    <img src="./picture/local.png" width="25px" height="25px" class="dital_img">
-                    <div class="dital_words">中国·湖南省·长沙市</div>
-                </li>
-            </ul>
-        </div>
+    <div class="middle" id="mainInfo">
         <div class="divide_line">
             <div class="second_title">教育背景</div>
         </div>
@@ -194,8 +166,7 @@ redirect_from:
             有很强的产品规划、需求分析、交互设计能力，能独立承担APP和WEB的项目的管理工作，
             善于沟通，贴近用户。
         </p>
+        <div style="width: 100%; height: 100px;"></div>
     </div>
-    <div style="width: 100%; height: 100px;"></div>
-  </div>
 </body>
 </html>
