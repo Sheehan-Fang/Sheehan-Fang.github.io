@@ -41,8 +41,8 @@ redirect_from:
                 <div class="time_word">计算机科学与技术（本科）</div>
             </div>
             <ul class="dital_list">
-                <li style="margin-top: 10px;"><b>年级排名：</b>5/252(前2%)&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp<b>加权平均分：</b>92.17</li>
-                <li style="margin-top: 10px;"><b>CET-4：</b>569&nbsp&nbsp&nbsp&nbsp/&nbsp&nbsp&nbsp&nbsp<b>CET-6：</b>518</li>
+                <li style="margin-top: 10px;"><b>年级排名：</b>5/252(前2%)               <b>加权平均分：</b>92.17</li>
+                <li style="margin-top: 10px;"><b>CET-4：</b>569                                   <b>CET-6：</b>518</li>
                 <li style="margin-top: 10px;">国家奖学金、校级奖学金、校级三好学生、院级优秀团员</li>
             </ul>
         </div>
