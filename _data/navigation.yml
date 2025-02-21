@@ -1,5 +1,8 @@
 # main links links
 main:
+  - title: "个人简历"
+    url: /cv/
+
   - title: "学术成果"
     url: /publications/
 
@@ -14,9 +17,6 @@ main:
         
   - title: "个人博客"
     url: /year-archive/
-    
-  - title: "个人简历"
-    url: /cv/
     
   # - title: "Guide"
   #   url: /markdown/
