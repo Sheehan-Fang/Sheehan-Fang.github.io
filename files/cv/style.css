@@ -217,6 +217,23 @@ hr {
     margin-right: 30px;
 }
 
+@media (min-width: 641px) {
+    .resume-page .publication-row {
+        display: grid;
+        grid-template-columns: max-content minmax(0, 1fr) max-content;
+        column-gap: 8px;
+        margin: 0 30px;
+        align-items: start;
+    }
+
+    .resume-page .publication-row > .time_word,
+    .resume-page .publication-row > .time_word2 {
+        width: auto;
+        margin-left: 0;
+        padding-right: 0 !important;
+    }
+}
+
 @media (max-width: 640px) {
     .resume-page .time {
         flex-direction: column;

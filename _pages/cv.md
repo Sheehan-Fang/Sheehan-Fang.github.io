@@ -52,7 +52,7 @@ redirect_from:
         </div>
         {% assign research = site.publications | where_exp: "item", "item.publication_status != nil" | sort: "title" | sort: "conference_year" | reverse %}
         {% for publication in research %}
-        <div class="time">
+        <div class="time publication-row">
             <div class="time_word" style="text-align: left;">{{ publication.conference_year }}</div>
             <div class="time_word2" style="text-align: center;">
                 <a href="{{ base_path }}{{ publication.url }}" style="color: rgb(90, 90, 90);">{{ publication.title | escape }}</a>
@@ -74,7 +74,7 @@ redirect_from:
         </ul>
         <hr>
         {% endfor %}
-        <div class="time">
+        <div class="time publication-row">
             <div class="time_word" style="text-align: left;">2024.06</div>
             <div class="time_word2" style="text-align: center;">
                 <a href="https://sheehan-fang.github.io/publication/2024-03-paper-1" style="color: rgb(90, 90, 90);">
