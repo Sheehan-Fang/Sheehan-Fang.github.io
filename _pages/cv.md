@@ -14,7 +14,7 @@ redirect_from:
 <html>
 
 <head>
-    <link href="{{ base_path }}/files/cv/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ base_path }}/files/cv/style.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
