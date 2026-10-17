@@ -169,8 +169,40 @@ hr {
 }
 
 .resume-page.middle {
+    margin: 8px auto;
     min-width: 0;
     overflow-wrap: anywhere;
+}
+
+.resume-page .divide_line {
+    margin: 18px 30px 12px;
+}
+
+.resume-page > .divide_line:first-child {
+    margin-top: 8px;
+}
+
+.resume-page .dital_list,
+.resume-page .dital_list2 {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.resume-page .dital_list li,
+.resume-page .dital_list2 li {
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.resume-page hr {
+    margin: 10px 30px 12px;
+}
+
+.resume-page .info_word {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    line-height: 1.5;
 }
 
 .resume-page .time_word,
@@ -188,7 +220,7 @@ hr {
 @media (max-width: 640px) {
     .resume-page .time {
         flex-direction: column;
-        gap: 8px;
+        gap: 4px;
     }
 
     .resume-page .time_word,
@@ -200,7 +232,7 @@ hr {
     }
 
     .resume-page .divide_line {
-        margin: 25px 15px;
+        margin: 16px 15px 10px;
     }
 
     .resume-page .info > h3,
