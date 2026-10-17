@@ -1,0 +1,1 @@
+<span class="publication-meta">{{ include.publication.venue | escape }} {{ include.publication.conference_year }}{% if include.publication.venue_note %} · {{ include.publication.venue_note | escape }}{% endif %} · {% if include.publication.publication_status == 'under_review' %}在投（尚未录用）{% else %}已录用{% endif %} · {{ include.publication.author_role | escape }}</span>

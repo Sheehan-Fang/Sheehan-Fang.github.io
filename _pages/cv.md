@@ -14,11 +14,11 @@ redirect_from:
 <html>
 
 <head>
-    <link href="https://sheehan-fang.github.io/files/cv/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ base_path }}/files/cv/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div class="middle" id="mainInfo">
+    <div class="middle resume-page" id="mainInfo">
         <div class="divide_line">
             <div class="second_title">教育背景</div>
         </div>
@@ -30,7 +30,8 @@ redirect_from:
             </div>
             <ul class="dital_list">
                 <li style="margin-top: 10px;"><b>GPA：</b>3.69</li>
-                <li style="margin-top: 10px;">硕士一等奖学金（2024年）</li>
+                <li style="margin-top: 10px;">实时与智能计算实验室（导师：李剑军教授）</li>
+                <li style="margin-top: 10px;">OPPO 企业奖学金、校级一等奖学金、校级三好学生、院级优秀学生干部</li>
             </ul>
         </div>
         <hr>
@@ -41,11 +42,50 @@ redirect_from:
                 <div class="time_word">计算机科学与技术（本科）</div>
             </div>
             <ul class="dital_list">
-                <li style="margin-top: 10px;"><b>年级排名：</b>5/252(前2%)&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;<b>加权平均分:</b>92.17</li>
+                <li style="margin-top: 10px;"><b>年级排名：</b>11/252&nbsp;&nbsp;/&nbsp;&nbsp;<b>GPA：</b>91.83</li>
                 <li style="margin-top: 10px;"><b>CET-4：</b>569&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;<b>CET-6：</b>518</li>
                 <li style="margin-top: 10px;">国家奖学金、校级奖学金、校级三好学生、院级优秀团员</li>
             </ul>
         </div>
+        <div class="divide_line" id="research">
+            <div class="second_title">研究成果</div>
+        </div>
+        {% assign research = site.publications | where_exp: "item", "item.publication_status != nil" | sort: "title" | sort: "conference_year" | reverse %}
+        {% for publication in research %}
+        <section class="info">
+            <h3><a href="{{ base_path }}{{ publication.url }}">{{ publication.title | escape }}</a></h3>
+            <p>{% include publication-meta.html publication=publication %}</p>
+            <p><b>关键词：</b>{{ publication.keywords | join: '；' | escape }}</p>
+            {{ publication.content | markdownify }}
+        </section>
+        {% endfor %}
+        <div class="divide_line" id="internships">
+            <div class="second_title">实习经历</div>
+        </div>
+        <section class="info">
+            <h3>深圳市腾讯计算机系统有限公司 · 算法工程师（实习）</h3>
+            <p>2026.03–2026.09 · TEG·AI 平台部</p>
+            <ul class="dital_list">
+                <li><b>元梦之星扣叮：</b>负责蒸馏训练与 RAG 流程搭建。基于 SFT+OPD 蒸馏提升轻量模型的检索决策与工具调用能力，参与 Agent 工具调用链设计及 RAG 流程优化方案落地，在保证生成效果的同时提升复杂问题场景下的回答速度与检索效率。</li>
+                <li><b>Vibe Gaming Agent：</b>负责 Search Agent 开发与训练。基于 DeepResearch 挖掘用户潜在意图，通过多轮联网搜索与上下文补全生成游戏设计文档，基于 SFT+GRPO 提升需求分析效率、文档生成质量与用户交互体验。</li>
+            </ul>
+        </section>
+        <section class="info">
+            <h3>小米科技有限责任公司 · 算法工程师（实习）</h3>
+            <p>2025.10–2025.12 · 集团技术委·小爱算法</p>
+            <ul class="dital_list">
+                <li>设计并实现基于 RAG 的动态知识检索框架，整合多源 IoT 设备知识库，提升智能家居场景下复杂指令的语义理解与设备匹配准确率。</li>
+                <li>基于 DPO+用户反馈数据进行迭代训练，优化模型响应策略与设备召回能力，在降低响应延迟的同时提升 IoT 设备控制准确率与用户交互体验。</li>
+            </ul>
+        </section>
+        <div class="divide_line" id="awards">
+            <div class="second_title">竞赛获奖</div>
+        </div>
+        <ul class="dital_list">
+            <li>华为第十届 ICT 大赛中国全国三等奖：《基于 ModelEngine 的专业病理知识问答智能体开发》。</li>
+            <li>全国大学生计算机设计大赛国家级二等奖：<a href="#competition-project">《基于图谱融合的高性能精细化全景可视分析预警平台》</a>。</li>
+            <li>阿里云天池电商知识图谱链接预测挑战赛正式赛：排名 23，参赛总数 20137。</li>
+        </ul>
         <div class="divide_line">
             <div class="second_title">项目/学术经历</div>
         </div>
@@ -74,7 +114,7 @@ redirect_from:
         <hr>
         <div class="time">
             <div class="time_word" style="text-align: left;">2022.11-2023.06</div>
-            <div class="time_word2" style="text-align: center;">计算机设计大赛国赛二等奖</div>
+            <div class="time_word2" id="competition-project" style="text-align: center;">图谱融合可视分析预警平台（竞赛项目）</div>
             <div class="time_word" style="text-align: end; padding-right: 40px;">第一作者</div>
         </div>
         <ul class="dital_list">
@@ -99,7 +139,7 @@ redirect_from:
         <div class="time">
             <div class="time_word" style="text-align: left;">2022.05-2022.07</div>
             <div class="time_word2" style="text-align: center;">
-                <a href="https://sheehan-fang.github.io/publication/2022-08-software-2" style="color: rgb(90, 90, 90);">
+                <a href="{{ base_path }}/publication/2022-07-software-2" style="color: rgb(90, 90, 90);">
                     时空动向事态可视化分析软件
                 </a>
             </div>

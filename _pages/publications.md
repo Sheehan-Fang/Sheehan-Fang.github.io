@@ -11,6 +11,13 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
+{% assign research = site.publications | where_exp: "item", "item.publication_status != nil" | sort: "title" | sort: "conference_year" | reverse %}
+{% for post in research %}
   {% include archive-single.html %}
+{% endfor %}
+
+{% for post in site.publications reversed %}
+  {% unless post.publication_status %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}
